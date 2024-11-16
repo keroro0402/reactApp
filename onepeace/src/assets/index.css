@@ -1,0 +1,18 @@
+h1 {
+  font-size: 2.2em !important;
+  font-weight: bold;
+  letter-spacing: 8px;
+  color: white;
+  text-shadow: 2px 2px 1px #666, -2px 2px 1px #666, 2px -2px 1px #666, -2px -2px 1px #666, 2px 0px 1px #666, 0px 2px 1px #666, -2px 0px 1px #666, 0px -2px 1px #666;
+}
+a {
+  text-decoration: none !important;
+}
+a.nav-link,
+a.nav-link:visited {
+  color: rgba(255, 255, 255, 0.55);
+}
+a.nav-link[aria-current='page'] {
+  color: #ff5733;
+  font-weight: bold; /* 太字 */
+}
