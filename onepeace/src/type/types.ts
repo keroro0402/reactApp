@@ -1,13 +1,11 @@
 interface Ob {
   name: string;
-  routerName: string;
+  url: string;
 }
 
 export interface naviLinkType {
   title: Ob;
   top: Ob;
-  about: Ob;
-  info: Ob;
 }
 
 export interface ImageItem {
