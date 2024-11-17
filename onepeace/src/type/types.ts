@@ -1,11 +1,12 @@
-interface Ob {
+interface Obj {
   name: string;
   url: string;
 }
 
 export interface naviLinkType {
-  title: Ob;
-  top: Ob;
+  title: Obj;
+  top: Obj;
+  info: Obj;
 }
 
 export interface ImageItem {
