@@ -9,11 +9,8 @@ const linkEl: naviLinkType = {
 };
 
 const OPTIONS: EmblaOptionsType = { loop: true };
-// const SLIDE_COUNT = 4;
-// const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 const CAROUSELCONFIG = {
   OPTIONS: OPTIONS,
-  // SLIDES: SLIDES,
 };
 
 export { linkEl, CAROUSELCONFIG };
