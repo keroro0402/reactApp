@@ -1,4 +1,5 @@
 import type { naviLinkType } from '@/type/types.ts';
+import { EmblaOptionsType } from 'embla-carousel';
 
 const title: string = 'OnePeace';
 const linkEl: naviLinkType = {
@@ -7,4 +8,9 @@ const linkEl: naviLinkType = {
   info: { name: 'INFOMATION', url: './info' },
 };
 
-export { linkEl };
+const OPTIONS: EmblaOptionsType = { loop: true };
+const CAROUSELCONFIG = {
+  OPTIONS: OPTIONS,
+};
+
+export { linkEl, CAROUSELCONFIG };
