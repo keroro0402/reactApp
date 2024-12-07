@@ -1,3 +1,4 @@
+import { EmblaOptionsType } from 'embla-carousel';
 interface Obj {
   name: string;
   url: string;
@@ -34,3 +35,8 @@ export interface ImageAPIOb {
     };
   };
 }
+
+export type PropType = {
+  slides: string[];
+  options?: EmblaOptionsType;
+};

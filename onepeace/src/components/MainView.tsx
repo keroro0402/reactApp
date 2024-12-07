@@ -1,5 +1,7 @@
 import agent from '@/agent';
 import { useState, useEffect } from 'react';
+import EmblaCarousel from '@/Carousel';
+import { CAROUSELCONFIG } from '@/consts/index';
 
 function MainView() {
   let [result, setResult] = useState<string[] | null>(null);
@@ -23,13 +25,7 @@ function MainView() {
 
   return (
     <div>
-      {result.map((item, index) => {
-        return (
-          <span key={index}>
-            <img src={item} alt={`image-${index}`} />
-          </span>
-        );
-      })}
+      <EmblaCarousel slides={result} options={CAROUSELCONFIG.OPTIONS} />
     </div>
   );
 }
