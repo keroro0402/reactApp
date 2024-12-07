@@ -24,7 +24,7 @@ function MainView() {
   }
 
   return (
-    <div>
+    <div className='mainView'>
       <EmblaCarousel slides={result} options={CAROUSELCONFIG.OPTIONS} />
     </div>
   );

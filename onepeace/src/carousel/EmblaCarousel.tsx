@@ -82,7 +82,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             <div className='embla__slide' key={index}>
               <div className='embla__slide__number'>
                 <span key={index}>
-                  <img src={item} alt={`image-${index}`} />
+                  <img src={item} alt={`image${index}`} />
                 </span>
               </div>
             </div>
