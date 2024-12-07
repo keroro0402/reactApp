@@ -1,6 +1,6 @@
 import agent from '@/agent';
 import { useState, useEffect } from 'react';
-import EmblaCarousel from '@/Carousel';
+import EmblaCarousel from '@/carousel/EmblaCarousel';
 import { CAROUSELCONFIG } from '@/consts/index';
 
 function MainView() {
