@@ -1,11 +1,6 @@
 import { ComponentPropsWithRef, useCallback, useEffect, useState } from 'react';
 import { EmblaCarouselType } from 'embla-carousel';
-
-type UseDotButtonType = {
-  selectedIndex: number;
-  scrollSnaps: number[];
-  onDotButtonClick: (index: number) => void;
-};
+import type { UseDotButtonType } from '@/type/types.ts';
 
 export const useDotButton = (emblaApi: EmblaCarouselType | undefined, onButtonClick?: (emblaApi: EmblaCarouselType) => void): UseDotButtonType => {
   const [selectedIndex, setSelectedIndex] = useState(0);
