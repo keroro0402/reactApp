@@ -44,9 +44,9 @@ export const useDotButton = (emblaApi: EmblaCarouselType | undefined, onButtonCl
   };
 };
 
-type PropType = ComponentPropsWithRef<'button'>;
+type PropType_Carousel = ComponentPropsWithRef<'button'>;
 
-export const DotButton: React.FC<PropType> = (props) => {
+export const DotButton: React.FC<PropType_Carousel> = (props) => {
   const { children, ...restProps } = props;
 
   return (

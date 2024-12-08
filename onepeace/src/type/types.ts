@@ -36,7 +36,7 @@ export interface ImageAPIOb {
   };
 }
 
-export type PropType = {
+export type PropType_Carousel = {
   slides: string[];
   options?: EmblaOptionsType;
 };
