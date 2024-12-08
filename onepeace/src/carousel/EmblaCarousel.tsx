@@ -1,4 +1,4 @@
-import type { PropType } from '@/type/types.ts';
+import type { PropType_Carousel } from '@/type/types.ts';
 import { useCallback, useEffect, useRef } from 'react';
 import { EmblaCarouselType, EmblaEventType } from 'embla-carousel';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -8,7 +8,7 @@ const TWEEN_FACTOR_BASE = 0.52;
 
 const numberWithinRange = (number: number, min: number, max: number): number => Math.min(Math.max(number, min), max);
 
-const EmblaCarousel: React.FC<PropType> = (props) => {
+const EmblaCarousel: React.FC<PropType_Carousel> = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const tweenFactor = useRef(0);
