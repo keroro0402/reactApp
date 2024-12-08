@@ -1,4 +1,4 @@
-import type { naviLinkType } from '@/type/types.ts';
+import type { naviLinkType, Comment } from '@/type/types.ts';
 import { EmblaOptionsType } from 'embla-carousel';
 
 const title: string = 'OnePeace';
@@ -13,4 +13,23 @@ const CAROUSELCONFIG = {
   OPTIONS: OPTIONS,
 };
 
-export { linkEl, CAROUSELCONFIG };
+const COMMENTARRAY: Comment[] = [
+  {
+    id: 1,
+    comment: 'テストコメント１',
+  },
+  {
+    id: 2,
+    comment: 'テストコメント２',
+  },
+  {
+    id: 3,
+    comment: 'テストコメント３',
+  },
+  {
+    id: 4,
+    comment: 'テストコメント４',
+  },
+];
+
+export { linkEl, CAROUSELCONFIG, COMMENTARRAY };

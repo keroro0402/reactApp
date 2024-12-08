@@ -36,7 +36,18 @@ export interface ImageAPIOb {
   };
 }
 
+export type UseDotButtonType = {
+  selectedIndex: number;
+  scrollSnaps: number[];
+  onDotButtonClick: (index: number) => void;
+};
+
 export type PropType_Carousel = {
   slides: string[];
   options?: EmblaOptionsType;
+};
+
+export type Comment = {
+  id: number;
+  comment: string;
 };
