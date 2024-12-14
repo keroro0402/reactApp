@@ -1,25 +1,11 @@
-import { useState } from 'react';
+import Test from './component/Test';
 
-const Test = () => {
-  const [fruit, setFruit] = useState([
-    {
-      label: 'Apple',
-      value: 200,
-      checked: false,
-    },
-    {
-      label: 'Orange',
-      value: 100,
-      checked: false,
-    },
-    {
-      label: 'Peach',
-      value: 400,
-      checked: false,
-    },
-  ]);
-
-  return <></>;
+const Parent = () => {
+  return (
+    <>
+      <Test />
+    </>
+  );
 };
 
-export default Test;
+export default Parent;
