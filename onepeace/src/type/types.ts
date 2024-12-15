@@ -6,8 +6,11 @@ interface Obj {
 
 export interface naviLinkType {
   title: Obj;
-  top: Obj;
-  info: Obj;
+  subNavi: {
+    top: Obj;
+    info: Obj;
+    todo: Obj;
+  };
 }
 
 export interface ImageItem {
@@ -35,6 +38,13 @@ export interface ImageAPIOb {
     };
   };
 }
+
+export type LinkType = {
+  linkInfo: {
+    name: string;
+    url: string;
+  };
+};
 
 export type UseDotButtonType = {
   selectedIndex: number;
