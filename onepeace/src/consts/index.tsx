@@ -1,4 +1,4 @@
-import type { naviLinkType, Comment } from '@/type/types.ts';
+import type { naviLinkType, Comment, MessageType } from '@/type/types.ts';
 import { EmblaOptionsType } from 'embla-carousel';
 
 const title: string = 'OnePeace';
@@ -35,4 +35,10 @@ const COMMENTARRAY: Comment[] = [
   },
 ];
 
-export { linkEl, CAROUSELCONFIG, COMMENTARRAY };
+const MESSAGES: MessageType = {
+  complete: '完了',
+  add: '追加',
+  nothingTodo: '登録された予定はありません',
+};
+
+export { linkEl, CAROUSELCONFIG, COMMENTARRAY, MESSAGES };

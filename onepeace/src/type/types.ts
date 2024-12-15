@@ -13,6 +13,10 @@ export interface naviLinkType {
   };
 }
 
+export interface TodoObjType {
+  id: string;
+  title: string;
+}
 export interface ImageItem {
   id: string; // 画像ID
   fullpath: string; // 画像のフルパス
@@ -44,6 +48,24 @@ export type LinkType = {
     name: string;
     url: string;
   };
+};
+
+export type TodoListType = {
+  todoInfo: {
+    id: string;
+    title: string;
+  };
+  deleteTodo: (id: string) => void;
+};
+
+export type TodoFormType = {
+  addTodo: (todo: TodoObjType) => void;
+};
+
+export type MessageType = {
+  complete: string;
+  add: string;
+  nothingTodo: string;
 };
 
 export type UseDotButtonType = {
