@@ -1,5 +1,5 @@
 import { linkEl } from '@/consts';
-import NaviItem from './NaviiItem';
+import NaviItem from './NaviItem';
 
 const Footer = () => {
   const links = Object.entries(linkEl.subNavi); // mapメソッドを使うので配列に変換
