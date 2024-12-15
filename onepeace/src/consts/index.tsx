@@ -6,6 +6,7 @@ const linkEl: naviLinkType = {
   title: { name: title, url: './' },
   top: { name: 'TOP', url: './' },
   info: { name: 'INFOMATION', url: './info' },
+  todo: { name: 'TODO', url: './todo' },
 };
 
 const OPTIONS: EmblaOptionsType = { loop: true };

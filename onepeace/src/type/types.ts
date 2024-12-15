@@ -8,6 +8,7 @@ export interface naviLinkType {
   title: Obj;
   top: Obj;
   info: Obj;
+  todo: Obj;
 }
 
 export interface ImageItem {

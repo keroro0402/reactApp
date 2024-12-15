@@ -11,6 +11,11 @@ const Footer = () => {
                 {linkEl.top.name}
               </a>
             </li>
+            <li className='nav-item'>
+              <a className='nav-link' href={linkEl.todo.url} aria-current='page'>
+                {linkEl.todo.name}
+              </a>
+            </li>
           </ul>
 
           <small className='navbar-dark'>

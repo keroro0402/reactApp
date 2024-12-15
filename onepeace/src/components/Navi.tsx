@@ -18,6 +18,11 @@ function Navi() {
                   {linkEl.top.name}
                 </a>
               </li>
+              <li v-for='item in naviLists' className='nav-item'>
+                <a className='router-link-active router-link-exact-active nav-link' href={linkEl.todo.url} aria-current='page'>
+                  {linkEl.todo.name}
+                </a>
+              </li>
             </ul>
           </div>
         </div>
