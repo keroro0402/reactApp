@@ -1,25 +1,20 @@
 import { linkEl } from '@/consts';
+import NaviItem from './NaviiItem';
 
 const Footer = () => {
+  const links = Object.entries(linkEl.subNavi); // mapメソッドを使うので配列に変換
   return (
     <>
       <footer className='py-4 bg-dark text-center'>
         <div className='container text-center'>
           <ul className='nav justify-content-center mb-3'>
-            <li className='nav-item'>
-              <a className='nav-link' href={linkEl.top.url} aria-current='page'>
-                {linkEl.top.name}
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link' href={linkEl.todo.url} aria-current='page'>
-                {linkEl.todo.name}
-              </a>
-            </li>
+            {links.map(([key, linkInfo]) => {
+              return <NaviItem key={key} linkInfo={linkInfo} />;
+            })}
           </ul>
 
           <small className='navbar-dark'>
-            <a className='navbar-brand' href={linkEl.top.url}>
+            <a className='navbar-brand' href={linkEl.subNavi.top.url}>
               {linkEl.title.name}
             </a>
           </small>
